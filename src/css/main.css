@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Barrio);
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+
+	background-color: #ffc300;
+    background-image: url('../img/grain.png');
+    background-position: center 0;
+}
+
+.container {
+	//position: relative;
+	//height: 100%;
+}
+
+.caption {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	transform: translateY(-50%);
+}
+
+.caption h1 {
+	font-family: 'Barrio', cursive;
+	font-size: 5em;
+}
