@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Mono|Share+Tech+Mono);
 
 html, body {
-	font-family: 'PT Mono', monospace;
-	height: 100%;
+	font-family: 'Share Tech Mono', monospace; /* Pt Mono */
+	height: 100% !important;
 	margin: 0;
 }
 
@@ -12,43 +12,77 @@ body {
 }
 
 .container {
-
-	background: linear-gradient(to bottom, #3e3750 50%, #664d74 50%);
-
+	//background: linear-gradient(to right, #3e3750 50%, #252529 50%);
 	height: 100%;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0px 30px;
+}
+
+.social, .caption, .menu {
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1%;
 }
 
 .social {
 	list-style: none;
-	align-self: flex-end;
+	align-self: center;
 	color: #3e3750;
+	flex-grow: 0.1;
+	height: 100%;
+	background-color: #222226;
 }
 
 .caption {
-	align-self: center; 
+	align-self: center;
+	flex-grow: 0.45;
+	height: 100%;
+	background-color: #3e3750;
+	color: #DCDCDF;
+	z-index: 1;
+    box-shadow: 0 5px 0 rgba(12,13,14,0.1), 4px 0px 7px 2px rgba(12,13,14,0.1), 0 7px 28px rgba(12,13,14,0.035), 0 0px 1px rgba(77, 88, 99, 0.025);
 }
 
 .caption h1 {
-	color: #664d74;
+	
 }
 
 .caption p {
-	color: #282828;
+	
 }
 
 .menu {
-	//font-family: 'Share Tech Mono', monospace;
 	list-style: none;
-	font-size: 1.1em;
-    font-weight: 600;
-    line-height: 1.5em;
-    color: #664d74;
+	font-size: 1em;
+    //font-weight: 600;
+    line-height: 2em;
+    color: #69696b;
     align-self: flex-start;
+    flex-grow: 0.45;
+    background-color: #252529;
+    height: 100%;
+    box-shadow: 0 5px 0 rgba(12,13,14,0.1), 
+			    -4px 0px 7px 2px rgba(12,13,14,0.1),
+			     0 7px 28px rgba(12,13,14,0.035), 
+			     0 1px 1px rgba(77, 88, 99, 0.025);
+	padding: 15% 1%;
+}
+
+.menu li:hover {
+	color: #DCDCDF;
+}
+
+.menu span:after {
+	content: "[ ]"
+}
+
+.menu .active span:hover:after {
+	content: "[x]"
+}
+
+.menu .active {
+	color: #DCDCDF;
 }
 
 .background {
