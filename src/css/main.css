@@ -28,28 +28,43 @@ body {
 .social {
 	list-style: none;
 	align-self: center;
-	color: #3e3750;
+	color: #1fbcd1; //#3e3750;
 	flex-grow: 0.1;
 	height: 100%;
 	background-color: #222226;
 }
 
+.social a {
+	color: #1fbcd1;
+}
+
 .caption {
+	    padding: 10% 0% 0% 5%;
 	align-self: center;
 	flex-grow: 0.45;
 	height: 100%;
-	background-color: #3e3750;
-	color: #DCDCDF;
+	background-color: #1fbcd1; //#3e3750;
+	color: #fff;
 	z-index: 1;
     box-shadow: 0 5px 0 rgba(12,13,14,0.1), 4px 0px 7px 2px rgba(12,13,14,0.1), 0 7px 28px rgba(12,13,14,0.035), 0 0px 1px rgba(77, 88, 99, 0.025);
 }
 
 .caption h1 {
-	
+	font-size: 4.5em;
+	margin-top: 0;
+    //font-weight: 100;
+}
+
+.caption h2 {
+	color: #0f727d;
+	font-size: 2em;
+	margin-bottom: 0;
 }
 
 .caption p {
-	
+	font-size: 1.3em;
+	max-width: 390px;
+	padding-left: 5%;
 }
 
 .menu {
